@@ -197,7 +197,7 @@ header {
 
 /* nav */
 #navi {
-  display: none;
+  /* display: none; */
   position: fixed;
   left: 0;
   top: 0;
@@ -517,6 +517,10 @@ header {
   }
 }
 
+.active {
+  display: none;
+}
+
 #navi:target {
   display: block;
 }
@@ -525,7 +529,6 @@ header {
   /* display: none; */
   position: absolute;
   left: 680px;
-  /* left: -100%; */
   top: 0;
   width: 472px;
   height: 100vh;
@@ -1840,15 +1843,6 @@ footer {
       }
     }
   }
-
-  /* INSTAGRAM */
-  #instagram_bg {
-    .instagram {
-      .top {
-        /* padding: 0 4%; */
-      }
-    }
-  }
 }
 
 @media screen and (max-width: 1445px) {
@@ -2043,6 +2037,14 @@ footer {
     span {
       font-size: 15px;
     }
+  }
+
+  /* nav */
+  #navi .pop .middle1 .gnb ul li a svg {
+    transform: rotate(90deg);
+  }
+  .navi2 {
+    display: none !important;
   }
 }
 
@@ -2269,6 +2271,12 @@ footer {
   /* LET'S KEEP IN TOUCH */
   .touch {
     background: #000000b3;
+  }
+
+  /* [공통] btn_top 상단 바로가기 버튼 */
+  .btn_top a {
+    width: 40px;
+    height: 40px;
   }
 }
 
